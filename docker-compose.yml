@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    depends_on: ['redis']
+  redis:
+    image: redis
+version: '2'
